@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-label="단일 스레드 이벤트 루프: 클라이언트 8개가 INCR을 500번씩 보내도 명령이 한 줄로 실행되어 counter 가 4000 이 된다" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Segoe UI', sans-serif">
+<defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#022047" flood-opacity="0.10"/></filter></defs>
+<rect x="14" y="10" width="932" height="306" rx="18" fill="#ffffff" stroke="#d3dbe6" stroke-width="1" filter="url(#sh)"/>
+<rect x="46" y="44" width="5" height="26" rx="2.5" fill="#1f4fd1"/>
+<text x="62" y="65" font-size="25" font-weight="800" fill="#0b1a3a" letter-spacing="-0.5">락 없이 동시성 문제를 없애는 법</text>
+<text x="62" y="91" font-size="13.5" font-weight="400" fill="#4e5968">클라이언트가 몇이든 저장소를 만지는 스레드는 하나 · 명령은 한 번에 하나씩, 끝까지</text>
+<rect x="845.8" y="44" width="68.2" height="26" rx="13" fill="#0b1a3a"/>
+<text x="879.9" y="61.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">동시성</text>
+<rect x="70" y="124" width="52" height="30" rx="9" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="96" y="144" font-size="12.5" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">C1</text>
+<rect x="70" y="166" width="52" height="30" rx="9" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="96" y="186" font-size="12.5" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">C2</text>
+<rect x="70" y="208" width="52" height="30" rx="9" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="96" y="228" font-size="12.5" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">C3</text>
+<rect x="70" y="250" width="52" height="30" rx="9" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="96" y="270" font-size="12.5" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">C4</text>
+<rect x="132" y="124" width="52" height="30" rx="9" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="158" y="144" font-size="12.5" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">C5</text>
+<rect x="132" y="166" width="52" height="30" rx="9" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="158" y="186" font-size="12.5" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">C6</text>
+<rect x="132" y="208" width="52" height="30" rx="9" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="158" y="228" font-size="12.5" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">C7</text>
+<rect x="132" y="250" width="52" height="30" rx="9" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="158" y="270" font-size="12.5" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">C8</text>
+<text x="70" y="304" font-size="12.5" font-weight="600" fill="#4e5968">클라이언트 8개 · 각자 INCR 500번</text>
+<path d="M184,139 C230,139 230,202 268,202" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-opacity="0.55"/>
+<path d="M184,181 C230,181 230,202 268,202" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-opacity="0.55"/>
+<path d="M184,223 C230,223 230,202 268,202" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-opacity="0.55"/>
+<path d="M184,265 C230,265 230,202 268,202" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-opacity="0.55"/>
+<rect x="272" y="124" width="330" height="156" rx="16" fill="#1f4fd1"/>
+<text x="294" y="152" font-size="15" font-weight="800" fill="#ffffff">이벤트 루프 · 스레드 1개</text>
+<rect x="294" y="170" width="50" height="30" rx="8" fill="#ffffff"/>
+<text x="319" y="190" font-size="11.5" font-weight="800" fill="#1f4fd1" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">INCR</text>
+<rect x="352" y="170" width="50" height="30" rx="8" fill="#ffffff"/>
+<text x="377" y="190" font-size="11.5" font-weight="800" fill="#1f4fd1" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">INCR</text>
+<rect x="410" y="170" width="50" height="30" rx="8" fill="#ffffff"/>
+<text x="435" y="190" font-size="11.5" font-weight="800" fill="#1f4fd1" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">INCR</text>
+<rect x="468" y="170" width="50" height="30" rx="8" fill="#ffffff"/>
+<text x="493" y="190" font-size="11.5" font-weight="800" fill="#1f4fd1" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">INCR</text>
+<rect x="526" y="170" width="50" height="30" rx="8" fill="#ffffff"/>
+<text x="551" y="190" font-size="11.5" font-weight="800" fill="#1f4fd1" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">INCR</text>
+<text x="294" y="228" font-size="13" font-weight="600" fill="#e4ecff">select()가 준비된 소켓만 골라 준다</text>
+<text x="294" y="250" font-size="13" font-weight="600" fill="#e4ecff">읽고 → 고치고 → 쓰기 사이에 끼어들 틈이 없다</text>
+<line x1="610" y1="202" x2="650" y2="202" stroke="#1f4fd1" stroke-width="3" stroke-linecap="round"/><path d="M644,197 L650,202 L644,207" fill="none" stroke="#1f4fd1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="658" y="150" width="96" height="104" rx="16" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="706" y="196" font-size="15" font-weight="800" fill="#0b1a3a" text-anchor="middle">저장소</text>
+<text x="706" y="218" font-size="12.5" font-weight="600" fill="#4e5968" text-anchor="middle">락 없음</text>
+<line x1="762" y1="202" x2="786" y2="202" stroke="#1f4fd1" stroke-width="3" stroke-linecap="round"/><path d="M780,197 L786,202 L780,207" fill="none" stroke="#1f4fd1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="794" y="138" width="128" height="128" rx="16" fill="#0b1a3a"/>
+<text x="858" y="172" font-size="13" font-weight="700" fill="#c7d6fb" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">counter</text>
+<text x="858" y="214" font-size="34" font-weight="800" fill="#ffffff" text-anchor="middle">4000</text>
+<text x="858" y="242" font-size="12" font-weight="700" fill="#c7d6fb" text-anchor="middle">8 × 500 · 유실 0</text>
+<text x="858" y="286" font-size="11.5" font-weight="600" fill="#4e5968" text-anchor="middle">실제 실행 결과</text>
+</svg>
