@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-label="mini-redis: 명령 하나가 들어와서 저장되고, 만료되고, 서버가 죽어도 되살아나기까지 직접 만들었다" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Segoe UI', sans-serif">
+<rect x="0" y="0" width="960" height="300" rx="24" fill="#1f4fd1"/>
+<text x="52" y="66" font-size="14" font-weight="700" fill="#c7d6fb">크래프톤 정글 13기 · 미니 Redis</text>
+<text x="50" y="120" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-1.8">mini-redis</text>
+<text x="52" y="158" font-size="17.5" font-weight="400" fill="#e4ecff">명령 하나가 들어와서 저장되고, 만료되고,</text>
+<text x="52" y="184" font-size="17.5" fill="#e4ecff">서버가 죽어도 <tspan font-weight="800" fill="#ffffff">되살아나기까지</tspan> 직접 만들었다</text>
+<rect x="52" y="210" width="56.7" height="32" rx="16" fill="#ffffff"/>
+<text x="80.35" y="231" font-size="13" font-weight="800" fill="#1f4fd1" text-anchor="middle">연결</text>
+<text x="114.7" y="231" font-size="14" font-weight="700" fill="#ffffff">→</text>
+<rect x="132.7" y="210" width="56.7" height="32" rx="16" fill="#ffffff"/>
+<text x="161.05" y="231" font-size="13" font-weight="800" fill="#1f4fd1" text-anchor="middle">저장</text>
+<text x="195.4" y="231" font-size="14" font-weight="700" fill="#ffffff">→</text>
+<rect x="213.4" y="210" width="56.7" height="32" rx="16" fill="#ffffff"/>
+<text x="241.75" y="231" font-size="13" font-weight="800" fill="#1f4fd1" text-anchor="middle">만료</text>
+<text x="276.1" y="231" font-size="14" font-weight="700" fill="#ffffff">→</text>
+<rect x="294.1" y="210" width="56.7" height="32" rx="16" fill="#ffffff"/>
+<text x="322.45" y="231" font-size="13" font-weight="800" fill="#1f4fd1" text-anchor="middle">복구</text>
+<rect x="566" y="38" width="352" height="214" rx="20" fill="#ffffff"/>
+<text x="588" y="66" font-size="12" font-weight="700" fill="#4e5968">해시 테이블 · 버킷 16개 중 일부</text>
+<rect x="588" y="80" width="46" height="27" rx="8" fill="#0b1a3a"/>
+<text x="611" y="98.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[0]</text>
+<line x1="637" y1="93.5" x2="651" y2="93.5" stroke="#1f4fd1" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+<rect x="654" y="80" width="96" height="27" rx="8" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="2"/>
+<text x="702" y="98.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:8</text>
+<rect x="588" y="115" width="46" height="27" rx="8" fill="#0b1a3a"/>
+<text x="611" y="133.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[1]</text>
+<line x1="637" y1="128.5" x2="651" y2="128.5" stroke="#1f4fd1" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+<rect x="654" y="115" width="96" height="27" rx="8" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="2"/>
+<text x="702" y="133.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:3</text>
+<line x1="753" y1="128.5" x2="767" y2="128.5" stroke="#e05d00" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+<rect x="770" y="115" width="96" height="27" rx="8" fill="#ffffff" stroke="#e05d00" stroke-width="2"/>
+<text x="818" y="133.5" font-size="12.5" font-weight="800" fill="#e05d00" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:10</text>
+<rect x="588" y="150" width="46" height="27" rx="8" fill="#0b1a3a"/>
+<text x="611" y="168.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[11]</text>
+<line x1="637" y1="163.5" x2="651" y2="163.5" stroke="#1f4fd1" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+<rect x="654" y="150" width="96" height="27" rx="8" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="2"/>
+<text x="702" y="168.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:1</text>
+<line x1="753" y1="163.5" x2="767" y2="163.5" stroke="#e05d00" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+<rect x="770" y="150" width="96" height="27" rx="8" fill="#ffffff" stroke="#e05d00" stroke-width="2"/>
+<text x="818" y="168.5" font-size="12.5" font-weight="800" fill="#e05d00" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:12</text>
+<rect x="588" y="185" width="46" height="27" rx="8" fill="#0b1a3a"/>
+<text x="611" y="203.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[14]</text>
+<line x1="637" y1="198.5" x2="651" y2="198.5" stroke="#1f4fd1" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+<rect x="654" y="185" width="96" height="27" rx="8" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="2"/>
+<text x="702" y="203.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:2</text>
+<line x1="753" y1="198.5" x2="767" y2="198.5" stroke="#e05d00" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+<rect x="770" y="185" width="96" height="27" rx="8" fill="#ffffff" stroke="#e05d00" stroke-width="2"/>
+<text x="818" y="203.5" font-size="12.5" font-weight="800" fill="#e05d00" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:11</text>
+<text x="588" y="238" font-size="12.5" font-weight="600" fill="#4e5968"><tspan fill="#1f4fd1" font-weight="800">■</tspan> 버킷의 첫 항목    <tspan fill="#e05d00" font-weight="800">■</tspan> 충돌 → 체인으로 잇는다</text>
+</svg>

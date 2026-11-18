@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="486" viewBox="0 0 960 486" role="img" aria-label="해시 테이블: user:10 을 FNV-1a 로 해시해 16개 버킷 중 1번에 넣는다. 12개 키 중 세 쌍이 같은 버킷에 떨어져 체인으로 이어진다" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Segoe UI', sans-serif">
+<defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#022047" flood-opacity="0.10"/></filter></defs>
+<rect x="14" y="10" width="932" height="462" rx="18" fill="#ffffff" stroke="#d3dbe6" stroke-width="1" filter="url(#sh)"/>
+<rect x="46" y="44" width="5" height="26" rx="2.5" fill="#1f4fd1"/>
+<text x="62" y="65" font-size="25" font-weight="800" fill="#0b1a3a" letter-spacing="-0.5">키가 버킷을 찾는 길</text>
+<text x="62" y="91" font-size="13.5" font-weight="400" fill="#4e5968">user:1 ~ user:12 를 이 구현의 해시(FNV-1a 64비트)로 실제 계산한 배치 · 버킷 16개</text>
+<rect x="857.2" y="44" width="56.8" height="26" rx="13" fill="#0b1a3a"/>
+<text x="885.6" y="61.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">저장</text>
+<rect x="70" y="118" width="106.56" height="38" rx="12" fill="#ffffff" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="123.28" y="142.5" font-size="14" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">&quot;user:10&quot;</text>
+<line x1="184.56" y1="137" x2="206.56" y2="137" stroke="#1f4fd1" stroke-width="2.2" stroke-linecap="round"/><path d="M200.56,132 L206.56,137 L200.56,142" fill="none" stroke="#1f4fd1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="214.56" y="118" width="117.48" height="38" rx="12" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="273.3" y="142.5" font-size="14" font-weight="800" fill="#0b1a3a" text-anchor="middle">FNV-1a 해시</text>
+<line x1="340.04" y1="137" x2="362.04" y2="137" stroke="#1f4fd1" stroke-width="2.2" stroke-linecap="round"/><path d="M356.04,132 L362.04,137 L356.04,142" fill="none" stroke="#1f4fd1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="370.04" y="118" width="153.6" height="38" rx="12" fill="#f3f6fb" stroke="#d3dbe6" stroke-width="1.5"/>
+<text x="446.84" y="142.5" font-size="14" font-weight="800" fill="#0b1a3a" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">hash &amp; (16 − 1)</text>
+<line x1="531.64" y1="137" x2="553.64" y2="137" stroke="#1f4fd1" stroke-width="2.2" stroke-linecap="round"/><path d="M547.64,132 L553.64,137 L547.64,142" fill="none" stroke="#1f4fd1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="561.64" y="118" width="93.96" height="38" rx="12" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="608.62" y="142.5" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">버킷 [1]</text>
+<text x="671.6" y="135" font-size="12.5" font-weight="600" fill="#4e5968">버킷 수가 2의 거듭제곱이라</text>
+<text x="671.6" y="153" font-size="12.5" font-weight="600" fill="#4e5968">나머지(%) 대신 비트 AND(&amp;)</text>
+<rect x="70" y="186" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="92" y="202" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[0]</text>
+<line x1="119" y1="197.5" x2="136" y2="197.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M130,192.5 L136,197.5 L130,202.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="142" y="186" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="188" y="202" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:8</text>
+<rect x="70" y="216" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="92" y="232" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[1]</text>
+<line x1="119" y1="227.5" x2="136" y2="227.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M130,222.5 L136,227.5 L130,232.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="142" y="216" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="188" y="232" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:3</text>
+<line x1="239" y1="227.5" x2="256" y2="227.5" stroke="#e05d00" stroke-width="1.8" stroke-linecap="round"/><path d="M250,222.5 L256,227.5 L250,232.5" fill="none" stroke="#e05d00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="262" y="216" width="92" height="23" rx="7" fill="#ffffff" stroke="#e05d00" stroke-width="1.8"/>
+<text x="308" y="232" font-size="12" font-weight="800" fill="#e05d00" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:10</text>
+<rect x="70" y="246" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="92" y="262" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[2]</text>
+<text x="128" y="262" font-size="11.5" font-weight="400" fill="#9aa6b6">비어 있음</text>
+<rect x="70" y="276" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="92" y="292" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[3]</text>
+<line x1="119" y1="287.5" x2="136" y2="287.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M130,282.5 L136,287.5 L130,292.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="142" y="276" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="188" y="292" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:9</text>
+<rect x="70" y="306" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="92" y="322" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[4]</text>
+<line x1="119" y1="317.5" x2="136" y2="317.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M130,312.5 L136,317.5 L130,322.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="142" y="306" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="188" y="322" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:4</text>
+<rect x="70" y="336" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="92" y="352" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[5]</text>
+<text x="128" y="352" font-size="11.5" font-weight="400" fill="#9aa6b6">비어 있음</text>
+<rect x="70" y="366" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="92" y="382" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[6]</text>
+<text x="128" y="382" font-size="11.5" font-weight="400" fill="#9aa6b6">비어 있음</text>
+<rect x="70" y="396" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="92" y="412" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[7]</text>
+<line x1="119" y1="407.5" x2="136" y2="407.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M130,402.5 L136,407.5 L130,412.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="142" y="396" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="188" y="412" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:5</text>
+<rect x="500" y="186" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="522" y="202" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[8]</text>
+<text x="558" y="202" font-size="11.5" font-weight="400" fill="#9aa6b6">비어 있음</text>
+<rect x="500" y="216" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="522" y="232" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[9]</text>
+<text x="558" y="232" font-size="11.5" font-weight="400" fill="#9aa6b6">비어 있음</text>
+<rect x="500" y="246" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="522" y="262" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[10]</text>
+<line x1="549" y1="257.5" x2="566" y2="257.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M560,252.5 L566,257.5 L560,262.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="572" y="246" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="618" y="262" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:6</text>
+<rect x="500" y="276" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="522" y="292" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[11]</text>
+<line x1="549" y1="287.5" x2="566" y2="287.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M560,282.5 L566,287.5 L560,292.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="572" y="276" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="618" y="292" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:1</text>
+<line x1="669" y1="287.5" x2="686" y2="287.5" stroke="#e05d00" stroke-width="1.8" stroke-linecap="round"/><path d="M680,282.5 L686,287.5 L680,292.5" fill="none" stroke="#e05d00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="692" y="276" width="92" height="23" rx="7" fill="#ffffff" stroke="#e05d00" stroke-width="1.8"/>
+<text x="738" y="292" font-size="12" font-weight="800" fill="#e05d00" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:12</text>
+<rect x="500" y="306" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="522" y="322" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[12]</text>
+<text x="558" y="322" font-size="11.5" font-weight="400" fill="#9aa6b6">비어 있음</text>
+<rect x="500" y="336" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="522" y="352" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[13]</text>
+<line x1="549" y1="347.5" x2="566" y2="347.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M560,342.5 L566,347.5 L560,352.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="572" y="336" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="618" y="352" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:7</text>
+<rect x="500" y="366" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="522" y="382" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[14]</text>
+<line x1="549" y1="377.5" x2="566" y2="377.5" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round"/><path d="M560,372.5 L566,377.5 L560,382.5" fill="none" stroke="#1f4fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="572" y="366" width="92" height="23" rx="7" fill="#1f4fd1" stroke="#1f4fd1" stroke-width="1.5"/>
+<text x="618" y="382" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:2</text>
+<line x1="669" y1="377.5" x2="686" y2="377.5" stroke="#e05d00" stroke-width="1.8" stroke-linecap="round"/><path d="M680,372.5 L686,377.5 L680,382.5" fill="none" stroke="#e05d00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="692" y="366" width="92" height="23" rx="7" fill="#ffffff" stroke="#e05d00" stroke-width="1.8"/>
+<text x="738" y="382" font-size="12" font-weight="800" fill="#e05d00" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">user:11</text>
+<rect x="500" y="396" width="44" height="23" rx="7" fill="#0b1a3a"/>
+<text x="522" y="412" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">[15]</text>
+<text x="558" y="412" font-size="11.5" font-weight="400" fill="#9aa6b6">비어 있음</text>
+<text x="70" y="448" font-size="13" font-weight="600" fill="#4e5968"><tspan fill="#1f4fd1" font-weight="800">■</tspan> 버킷의 첫 항목   <tspan fill="#e05d00" font-weight="800">■</tspan> 같은 버킷에 떨어진 항목(충돌)은 연결 리스트로 잇는다   ·   항목 수가 버킷 수를 넘으면 버킷을 2배로 늘려 다시 배치</text>
+</svg>

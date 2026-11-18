@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="462" viewBox="0 0 960 462" role="img" aria-label="만료: 지연 삭제는 조회하는 순간 지워 nil 을 돌려주고, 주기 삭제는 100ms마다 버킷을 훑어 DBSIZE 가 51에서 1이 된다" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Segoe UI', sans-serif">
+<defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#022047" flood-opacity="0.10"/></filter></defs>
+<rect x="14" y="10" width="932" height="438" rx="18" fill="#ffffff" stroke="#d3dbe6" stroke-width="1" filter="url(#sh)"/>
+<rect x="46" y="44" width="5" height="26" rx="2.5" fill="#1f4fd1"/>
+<text x="62" y="65" font-size="25" font-weight="800" fill="#0b1a3a" letter-spacing="-0.5">만료된 값은 두 가지 길로 사라진다</text>
+<text x="62" y="91" font-size="13.5" font-weight="400" fill="#4e5968">아래 명령과 응답은 실제 실행 출력</text>
+<rect x="857.2" y="44" width="56.8" height="26" rx="13" fill="#0b1a3a"/>
+<text x="885.6" y="61.5" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">만료</text>
+<text x="62" y="132" font-size="16" font-weight="800" fill="#0b1a3a">지연 삭제</text>
+<text x="140" y="132" font-size="13" font-weight="600" fill="#4e5968">조회하는 순간 만료를 확인하고 그 자리에서 지운다 → 만료된 값은 절대 나가지 않는다</text>
+<rect x="110" y="177" width="570" height="18" rx="9" fill="#1f4fd1"/>
+<rect x="680" y="177" width="247" height="18" rx="9" fill="#e9edf3"/>
+<text x="395" y="190.5" font-size="11.5" font-weight="800" fill="#ffffff" text-anchor="middle">살아 있음 (PX 300)</text>
+<line x1="680" y1="162" x2="680" y2="210" stroke="#e05d00" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<text x="680" y="156" font-size="11.5" font-weight="800" fill="#e05d00" text-anchor="middle">만료 시각 300ms</text>
+<circle cx="110" cy="186" r="5" fill="#0b1a3a" stroke="#ffffff" stroke-width="2"/>
+<text x="110" y="226" font-size="11.5" font-weight="700" fill="#4e5968" text-anchor="middle">0</text>
+<circle cx="775" cy="186" r="5" fill="#0b1a3a" stroke="#ffffff" stroke-width="2"/>
+<text x="775" y="226" font-size="11.5" font-weight="700" fill="#4e5968" text-anchor="middle">350ms</text>
+<text x="102" y="248" font-size="12" font-weight="700" fill="#0b1a3a" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">SET session abc PX 300  →  OK</text>
+<text x="102" y="266" font-size="12" font-weight="700" fill="#0b1a3a" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">GET session  →  &quot;abc&quot;</text>
+<text x="715" y="248" font-size="12" font-weight="700" fill="#e05d00" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">GET session  →  (nil)</text>
+<text x="715" y="266" font-size="12" font-weight="700" fill="#e05d00" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">TTL session  →  (integer) -2</text>
+<line x1="46" y1="292" x2="914" y2="292" stroke="#d3dbe6" stroke-width="1" stroke-linecap="round"/>
+<text x="62" y="326" font-size="16" font-weight="800" fill="#0b1a3a">주기 삭제</text>
+<text x="140" y="326" font-size="13" font-weight="600" fill="#4e5968">아무도 다시 조회하지 않는 키가 메모리에 남지 않게, 이벤트 루프가 100ms마다 버킷을 훑는다</text>
+<line x1="110" y1="376" x2="650" y2="376" stroke="#d3dbe6" stroke-width="3" stroke-linecap="round"/>
+<path d="M104,362 L116,362 L110,373 z" fill="#1f4fd1"/>
+<text x="110" y="396" font-size="11" font-weight="600" fill="#4e5968" text-anchor="middle">0ms</text>
+<path d="M194,362 L206,362 L200,373 z" fill="#1f4fd1"/>
+<text x="200" y="396" font-size="11" font-weight="600" fill="#4e5968" text-anchor="middle">100ms</text>
+<path d="M284,362 L296,362 L290,373 z" fill="#1f4fd1"/>
+<text x="290" y="396" font-size="11" font-weight="600" fill="#4e5968" text-anchor="middle">200ms</text>
+<path d="M374,362 L386,362 L380,373 z" fill="#1f4fd1"/>
+<text x="380" y="396" font-size="11" font-weight="600" fill="#4e5968" text-anchor="middle">300ms</text>
+<path d="M464,362 L476,362 L470,373 z" fill="#1f4fd1"/>
+<text x="470" y="396" font-size="11" font-weight="600" fill="#4e5968" text-anchor="middle">400ms</text>
+<path d="M554,362 L566,362 L560,373 z" fill="#1f4fd1"/>
+<text x="560" y="396" font-size="11" font-weight="600" fill="#4e5968" text-anchor="middle">500ms</text>
+<path d="M644,362 L656,362 L650,373 z" fill="#1f4fd1"/>
+<text x="650" y="396" font-size="11" font-weight="600" fill="#4e5968" text-anchor="middle">600ms</text>
+<text x="380" y="354" font-size="11.5" font-weight="700" fill="#1f4fd1" text-anchor="middle">▼ 100ms마다 한 번, 한 번에 최대 1000 버킷</text>
+<rect x="678" y="342" width="196" height="62" rx="12" fill="#0b1a3a"/>
+<text x="694" y="364" font-size="12.5" font-weight="700" fill="#c7d6fb" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">DBSIZE  →  51</text>
+<text x="694" y="388" font-size="12.5" font-weight="800" fill="#ffffff" font-family="'D2Coding', 'JetBrains Mono', Consolas, Menlo, monospace">DBSIZE  →  1</text>
+<text x="102" y="422" font-size="11.5" font-weight="600" fill="#4e5968">PX 100 키 50개와 일반 키 1개를 넣고, 아무도 조회하지 않은 채 0.6초 뒤에 다시 센 값</text>
+</svg>
